@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <style>
-      .container-fluid{
+      .container-fluid {
         max-width: 1200px;
       }
       p {
@@ -74,7 +74,7 @@
         h1 {
           font-size: 20px !important;
         }
-        .container{
+        .container {
           padding: 4px !important;
           gap: 8px !important;
         }
@@ -97,12 +97,11 @@
         .table-bot {
           width: 50%;
         }
-        /* .table-bot > div {
-          display: flex;
-          justify-content: space-between;
-          padding: 4px;
-          border-bottom: 2px solid;
-        } */
+        .table-bot > div {
+          font-size: 14px !important;
+          padding: 2px 4px !important;
+          border-bottom: 1px solid;
+        }
         input[type="checkbox"] {
           display: none;
         }
@@ -116,11 +115,16 @@
         .actions {
           display: none;
         }
+        td,th{
+          font-size: 14px !important;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container container-fluid py-4  d-flex flex-column gap-4 printable">
+    <div
+      class="container container-fluid py-4 d-flex flex-column gap-4 printable"
+    >
       <!-- 1 -->
       <section class="row gx-0 pb-4">
         <div class="col">
@@ -157,7 +161,7 @@
       </section>
       <!-- 3 table -->
       <section>
-        <table class="table table-bordered mx-auto" dir="rtl">
+        <table class="table table-bordered mx-auto my-0" dir="rtl">
           <thead>
             <tr>
               <th>
@@ -273,7 +277,7 @@
           </div>
 
           <div>
-            <div style="padding: 0; border: none">
+            <div style="padding: 0; border: none" class="d-flex">
               <!-- @if (Model.TypePaidId == null) { -->
               <!-- <span id="typeofPaid">لايوجد</span> -->
               <select
